@@ -24,9 +24,10 @@ class _SplashScreenState extends State<SplashScreen> {
     if (token == null) {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => SignUpPage()),
+        MaterialPageRoute(builder: (context) => LoginPage()),
       );
     } else {
+
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => BottomBarPage()),
