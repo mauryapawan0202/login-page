@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:login_page/preferences_helper.dart';
 import 'package:login_page/view/bottom_bar_page.dart';
 import 'package:login_page/view/login_page.dart';
@@ -24,7 +26,7 @@ class _SplashScreenState extends State<SplashScreen> {
     if (token == null) {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => SignUpPage()),
+        MaterialPageRoute(builder: (context) => LoginPage()),
       );
     } else {
       Navigator.pushReplacement(
@@ -36,6 +38,16 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: CircularProgressIndicator()));
+    return Scaffold(
+      backgroundColor: Color(0xffFFFFFF),
+      body: Center(
+        child: SvgPicture.asset(
+          'assets/images/splash_screen.svg',
+          height: 60.h,
+          width: 210.w,
+          fit: BoxFit.scaleDown,
+        ),
+      ),
+    );
   }
 }
