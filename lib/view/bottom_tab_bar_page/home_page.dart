@@ -24,7 +24,6 @@ class HomePage extends StatelessWidget {
               child: Image.asset("assets/images/ic_icon_one.png"),
             ),
           ),
-          // SizedBox(height: 5,),
           InkWell(
             onTap: () async {
               await AppIconChanger.change("IconTwo");
@@ -36,7 +35,6 @@ class HomePage extends StatelessWidget {
               child: Image.asset("assets/images/ic_icon_two.png"),
             ),
           ),
-          // SizedBox(height: 5,),
           InkWell(
             onTap: () async {
               await AppIconChanger.change("IconThree");
@@ -48,7 +46,6 @@ class HomePage extends StatelessWidget {
               child: Image.asset("assets/images/ic_icon_three.png"),
             ),
           ),
-          // SizedBox(height: 5,),
           InkWell(
             onTap: () async {
               await AppIconChanger.change("IconFour");
@@ -58,6 +55,28 @@ class HomePage extends StatelessWidget {
               height: 100,
               width: 100,
               child: Image.asset("assets/images/ic_icon_four.png"),
+            ),
+          ),
+          InkWell(
+            onTap: () async {
+              await AppIconChanger.change("IconFive");
+            },
+            child: Container(
+              color: Colors.red,
+              height: 100,
+              width: 100,
+              child: Image.asset("assets/images/ic_icon_five.png"),
+            ),
+          ),
+          InkWell(
+            onTap: () async {
+              await AppIconChanger.change("IconSix");
+            },
+            child: Container(
+              color: Colors.red,
+              height: 100,
+              width: 100,
+              child: Image.asset("assets/images/ic_icon_six.png"),
             ),
           ),
         ],

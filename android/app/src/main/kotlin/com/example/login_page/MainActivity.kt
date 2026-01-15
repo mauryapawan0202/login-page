@@ -29,7 +29,7 @@ class MainActivity : FlutterActivity() {
         val pm = packageManager
         val pkg = packageName
 
-        listOf("IconOne", "IconTwo", "IconThree", "IconFour").forEach {
+        listOf("IconOne", "IconTwo", "IconThree", "IconFour", "IconFive", "IconSix").forEach {
             pm.setComponentEnabledSetting(
                 ComponentName(pkg, "$pkg.$it"),
                 if (it == icon)

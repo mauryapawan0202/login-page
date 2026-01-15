@@ -27,7 +27,8 @@ class _BottomBarPageState extends State<BottomBarPage> {
             icon: Icon(Icons.home_outlined),
             label: 'Home',
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.history), label: 'History'),
+          BottomNavigationBarItem(icon: Icon(Icons.history), label: 
+          'History'),
           BottomNavigationBarItem(
             icon: Icon(Icons.person_outline),
             label: 'Account',

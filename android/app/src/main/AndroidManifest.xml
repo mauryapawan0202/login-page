@@ -9,15 +9,7 @@
             android:name=".MainActivity"
             android:exported="true" />
 
-<!--        &lt;!&ndash; MainActivity = launcher (DEV ke liye) &ndash;&gt;-->
-<!--        <activity-->
-<!--            android:name=".MainActivity"-->
-<!--            android:exported="true">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN"/>-->
-<!--                <category android:name="android.intent.category.LAUNCHER"/>-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
+
 
 
         <!-- Icon One = LAUNCHER -->
@@ -70,6 +62,34 @@
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_icon_four"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+
+        <!-- Icon five = LAUNCHER -->
+
+        <activity-alias
+            android:name=".IconFive"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_icon_five"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+
+        <!-- Icon six = LAUNCHER -->
+
+        <activity-alias
+            android:name=".IconSix"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_icon_six"
             android:targetActivity=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
